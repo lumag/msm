@@ -195,17 +195,16 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
-td.status-Y { background-color: green; }
-
-td.status-no-dts { background-color: lightgreen; }
-
-td.status-N { background-color: red; }
-
-td.status-NA { background-color: gray; }
-
-td.status-next { background-color: yellow; }
-
-td.status-unknown { background-color: lightgray; }
+tr:nth-child(even) td.status-Y { background-color: #00a000; }
+tr:nth-child(even) td.status-N { background-color: #ff1e1e; }
+tr:nth-child(even) td.status-NA { background-color: darkgray; }
+tr:nth-child(even) td.status-unknown { background-color: lightgray; }
+tr td.status-Y { background-color: green; }
+tr td.status-no-dts { background-color: lightgreen; }
+tr td.status-N { background-color: red; }
+tr td.status-NA { background-color: gray; }
+tr td.status-next { background-color: yellow; }
+tr td.status-unknown { background-color: silver; }
 
 th { text-align: center; }
 
@@ -214,3 +213,12 @@ th { text-align: center; }
 .home { display: inline-block; }
 
 table { width: auto; margin-right: 30px; display: inline-block; color: #111; }
+
+/* Tooltip container */
+.tooltip { position: relative; border-bottom: 1px dotted black; /* If you want dots under the hoverable text */ }
+
+/* Tooltip text */
+.tooltip .tooltiptext { visibility: hidden; width: 120px; background-color: black; color: #fff; text-align: center; padding: 5px 0; border-radius: 6px; /* Position the tooltip text - see examples below! */ position: absolute; z-index: 1; }
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext { visibility: visible; }

@@ -56,7 +56,7 @@
 <th rowspan="2">PCIe</th>
 <th rowspan="2">SMMU</th>
 <th colspan="3">Storage</th>
-<th colspan="2">CPU</th>
+<th colspan="3">CPU</th>
 <th rowspan="2">Remoteproc</th>
 <th colspan="3">Connectivity</th>
 <th rowspan="2">GNSS (GPS)</th>
@@ -76,6 +76,7 @@
 <th>SD/eMMC</th>
 <th>CPUfreq (DVFS)</th>
 <th>CPUidle</th>
+<th>SMP</th>
 <th>Bluetooth</th>
 <th>WLAN</th>
 <th>IPA</th>
@@ -92,6 +93,84 @@
 
 </thead>
 <tbody>
+
+<tr>
+<td><a href="/msm/soc/apq8064">APQ8064</a></td>
+
+
+<td class="status-Y">3.16</td>
+
+<td class="status-Y">4.6</td>
+
+<td class="status-Y">3.18</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">3.16
+	<span class="tooltip">(*)<span class="tooltiptext">HS uarts are not (yet) supported</span></span></td>
+
+<td class="status-Y">3.16
+	<span class="tooltip">(*)<span class="tooltiptext">This SoC uses SSBI to communicate with PMICs</span></span></td>
+
+<td class="status-Y">3.18</td>
+
+<td class="status-Y">4.6</td>
+
+<td class="status-Y">4.5</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">3.18</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-Y">3.16</td>
+
+<td class="status-Y">4.7</td>
+
+<td class="status-Y">4.11
+	<span class="tooltip">(*)<span class="tooltiptext">Could not verify it</span></span></td>
+
+<td class="status-Y">4.11
+	<span class="tooltip">(*)<span class="tooltiptext">Could not verify it</span></span></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">3.19</td>
+
+
+<td><a href="/msm/soc/apq8064">APQ8064</a></td>
+</tr>
 
 <tr>
 <td><a href="/msm/soc/msm8916">MSM8916</a></td>
@@ -124,6 +203,8 @@
 <td class="status-Y">4.3</td>
 
 <td class="status-Y">4.17</td>
+
+<td class="status-Y">4.8</td>
 
 <td class="status-Y">4.8</td>
 
@@ -166,6 +247,81 @@
 </tr>
 
 <tr>
+<td><a href="/msm/soc/msm8939">MSM8939</a></td>
+
+
+<td class="status-Y">5.12</td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-N">N</td>
+
+<td class="status-next">WIP
+	<span class="tooltip">(*)<span class="tooltiptext">Using <a href="https://github.com/msm8916-mainline/lk2nd/releases/tag/0.14.0">lk2nd</a> as a bootloader is required to enable SMP</span></span></td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-Y">4.11</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-Y">4.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.14</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/msm/soc/msm8939">MSM8939</a></td>
+</tr>
+
+<tr>
 <td><a href="/msm/soc/msm8996">MSM8996</a></td>
 
 
@@ -195,9 +351,13 @@
 
 <td class="status-Y">4.8</td>
 
-<td class="status-Y">5.14</td>
+<td class="status-Y">5.14
+	<span class="tooltip">(*)<span class="tooltiptext">Not really stable until 6.3</span></span></td>
 
 <td class="status-Y">5.3</td>
+
+<td class="status-Y">4.6
+	<span class="tooltip">(*)<span class="tooltiptext">Not really stable until 6.3</span></span></td>
 
 <td class="status-Y">4.12</td>
 
@@ -238,6 +398,80 @@
 </tr>
 
 <tr>
+<td><a href="/msm/soc/qdu1000">QDU1000 / QRU1000</a></td>
+
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/msm/soc/qdu1000">QDU1000 / QRU1000</a></td>
+</tr>
+
+<tr>
 <td><a href="/msm/soc/sc7180">SC7180</a></td>
 
 
@@ -270,6 +504,8 @@
 <td class="status-Y">5.6</td>
 
 <td class="status-Y">5.8</td>
+
+<td class="status-Y">5.6</td>
 
 <td class="status-Y">5.8</td>
 
@@ -340,6 +576,8 @@
 <td class="status-Y">5.15</td>
 
 <td class="status-Y">5.14</td>
+
+<td class="status-Y">5.13</td>
 
 <td class="status-Y">5.13</td>
 
@@ -409,7 +647,9 @@
 
 <td class="status-Y">6.0</td>
 
-<td class="status-unknown"></td>
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.0</td>
 
 <td class="status-Y">6.0</td>
 
@@ -441,7 +681,7 @@
 
 <td class="status-Y">6.3</td>
 
-<td class="status-unknown"></td>
+<td class="status-Y">6.5</td>
 
 <td class="status-unknown"></td>
 
@@ -487,6 +727,8 @@
 
 <td class="status-Y">5.3</td>
 
+<td class="status-Y">4.18</td>
+
 <td class="status-Y">5.2</td>
 
 <td class="status-Y">4.19</td>
@@ -526,6 +768,80 @@
 </tr>
 
 <tr>
+<td><a href="/msm/soc/sdx65">SDX65</a></td>
+
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+
+<td><a href="/msm/soc/sdx65">SDX65</a></td>
+</tr>
+
+<tr>
 <td><a href="/msm/soc/sm8150">SM8150</a></td>
 
 
@@ -558,6 +874,8 @@
 <td class="status-Y">5.6</td>
 
 <td class="status-Y">5.12</td>
+
+<td class="status-Y">5.4</td>
 
 <td class="status-Y">5.6</td>
 
@@ -631,6 +949,8 @@
 
 <td class="status-Y">5.19</td>
 
+<td class="status-Y">5.7</td>
+
 <td class="status-Y">5.8</td>
 
 <td class="status-unknown"></td>
@@ -655,7 +975,7 @@
 
 <td class="status-NA">N/A</td>
 
-<td class="status-unknown"></td>
+<td class="status-next">WIP</td>
 
 <td class="status-Y">5.9</td>
 
@@ -703,6 +1023,8 @@
 
 <td class="status-Y">5.16</td>
 
+<td class="status-Y">5.12</td>
+
 <td class="status-Y">5.13</td>
 
 <td class="status-unknown"></td>
@@ -727,7 +1049,7 @@
 
 <td class="status-NA">N/A</td>
 
-<td class="status-next">WIP</td>
+<td class="status-Y">6.4</td>
 
 <td class="status-Y">6.3</td>
 
@@ -761,7 +1083,8 @@
 
 <td class="status-Y">5.19</td>
 
-<td class="status-Y">5.18</td>
+<td class="status-Y">5.18
+	<span class="tooltip">(*)<span class="tooltiptext">PHY support was added in 5.17</span></span></td>
 
 <td class="status-Y">5.17</td>
 
@@ -770,6 +1093,8 @@
 <td class="status-Y">5.17</td>
 
 <td class="status-Y">6.1</td>
+
+<td class="status-Y">5.17</td>
 
 <td class="status-Y">5.17</td>
 
@@ -799,7 +1124,7 @@
 
 <td class="status-NA">N/A</td>
 
-<td class="status-next">WIP</td>
+<td class="status-Y">6.4</td>
 
 <td class="status-next">WIP</td>
 
@@ -833,7 +1158,8 @@
 
 <td class="status-Y">6.3</td>
 
-<td class="status-next">WIP</td>
+<td class="status-Y">6.4
+	<span class="tooltip">(*)<span class="tooltiptext">PHY support was added in 6.3</span></span></td>
 
 <td class="status-Y">6.3</td>
 
@@ -849,7 +1175,9 @@
 
 <td class="status-Y">6.3</td>
 
-<td class="status-unknown"></td>
+<td class="status-Y">6.3</td>
+
+<td class="status-next">WIP</td>
 
 <td class="status-unknown"></td>
 
@@ -865,13 +1193,14 @@
 
 <td class="status-unknown"></td>
 
-<td class="status-Y">6.3</td>
+<td class="status-Y">6.3
+	<span class="tooltip">(*)<span class="tooltiptext">PHY/Controller support was added in 6.3</span></span></td>
 
 <td class="status-Y">6.3</td>
 
 <td class="status-NA">N/A</td>
 
-<td class="status-next">WIP</td>
+<td class="status-Y">6.5</td>
 
 <td class="status-next">WIP</td>
 
@@ -901,7 +1230,7 @@
 <th rowspan="2">PCIe</th>
 <th rowspan="2">SMMU</th>
 <th colspan="3">Storage</th>
-<th colspan="2">CPU</th>
+<th colspan="3">CPU</th>
 <th rowspan="2">Remoteproc</th>
 <th colspan="3">Connectivity</th>
 <th rowspan="2">GNSS (GPS)</th>
@@ -921,6 +1250,7 @@
 <th>SD/eMMC</th>
 <th>CPUfreq (DVFS)</th>
 <th>CPUidle</th>
+<th>SMP</th>
 <th>Bluetooth</th>
 <th>WLAN</th>
 <th>IPA</th>
@@ -956,7 +1286,8 @@
 <th rowspan="2">Reset key</th>
 <th rowspan="2">RTC</th>
 <th rowspan="2">LPG/PWM</th>
-<th rowspan="2">WLED/flash</th>
+<th rowspan="2">WLED (backlight)</th>
+<th rowspan="2">Flash LED</th>
 <th colspan="2">USB</th>
 <th rowspan="2">Coincell</th>
 <th rowspan="2">Fuelgague/Charging</th>
@@ -964,6 +1295,7 @@
 <th rowspan="2">LABIB</th>
 <th rowspan="2">Audio Codec</th>
 <th rowspan="2">eUSB2 Repeater</th>
+<th rowspan="2">Matrix keypad</th>
 <th rowspan="2">Platform</th>
 </tr>
 <tr>
@@ -1018,6 +1350,10 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
 
 <td><a href="/msm/pmic/pm8005">PM8005</a></td>
 </tr>
@@ -1064,6 +1400,10 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
 
 <td><a href="/msm/pmic/pm8009">PM8009</a></td>
 </tr>
@@ -1110,6 +1450,10 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
 
 <td><a href="/msm/pmic/pm8010">PM8010</a></td>
 </tr>
@@ -1156,6 +1500,10 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
 
 <td><a href="/msm/pmic/pm8150">PM8150</a></td>
 </tr>
@@ -1186,6 +1534,8 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
 <td class="status-Y">5.14</td>
 
 <td class="status-next">WIP</td>
@@ -1195,6 +1545,8 @@
 <td class="status-N">N</td>
 
 <td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
 
 <td class="status-NA">N/A</td>
 
@@ -1232,6 +1584,8 @@
 
 <td class="status-N">N</td>
 
+<td class="status-Y">6.4</td>
+
 <td class="status-NA">N/A</td>
 
 <td class="status-NA">N/A</td>
@@ -1243,6 +1597,8 @@
 <td class="status-NA">N/A</td>
 
 <td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
 
 <td class="status-NA">N/A</td>
 
@@ -1294,6 +1650,10 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
 
 <td><a href="/msm/pmic/pm8350">PM8350</a></td>
 </tr>
@@ -1332,9 +1692,13 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
 <td class="status-N">N</td>
 
 <td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
 
 <td class="status-NA">N/A</td>
 
@@ -1363,6 +1727,10 @@
 <td class="status-NA">N/A</td>
 
 <td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
 
 <td class="status-NA">N/A</td>
 
@@ -1432,6 +1800,10 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
 
 <td><a href="/msm/pmic/pm8450">PM8450</a></td>
 </tr>
@@ -1458,7 +1830,11 @@
 
 <td class="status-NA">N/A</td>
 
-<td class="status-N">N</td>
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
 
 <td class="status-NA">N/A</td>
 
@@ -1516,6 +1892,8 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
 <td class="status-N">N</td>
 
 <td class="status-NA">N/A</td>
@@ -1523,6 +1901,8 @@
 <td class="status-NA">N/A</td>
 
 <td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
 
 
 <td><a href="/msm/pmic/pm8550b">PM8550B</a></td>
@@ -1570,6 +1950,10 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
 
 <td><a href="/msm/pmic/pm8550ve">PM8550VE</a></td>
 </tr>
@@ -1616,8 +2000,63 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
 
 <td><a href="/msm/pmic/pm8550vs">PM8550VS</a></td>
+</tr>
+
+<tr>
+<td><a href="/msm/pmic/pm8821">PM8821</a></td>
+
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.11</td>
+
+<td class="status-N">N
+	<span class="tooltip">(*)<span class="tooltiptext">controlled through SAW2</span></span></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/msm/pmic/pm8821">PM8821</a></td>
 </tr>
 
 <tr>
@@ -1646,6 +2085,8 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
 <td class="status-Y">5.16</td>
 
 <td class="status-NA">N/A</td>
@@ -1662,8 +2103,60 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
 
 <td><a href="/msm/pmic/pm8916">PM8916</a></td>
+</tr>
+
+<tr>
+<td><a href="/msm/pmic/pm8921">PM8921</a></td>
+
+
+<td class="status-Y">4.3</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.17</td>
+
+<td class="status-Y">4.12 / 4.17</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">3.0 / 4.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">3.1 / 4.4</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">3.0</td>
+
+
+<td><a href="/msm/pmic/pm8921">PM8921</a></td>
 </tr>
 
 <tr>
@@ -1696,7 +2189,11 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
 <td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
 
 <td class="status-NA">N/A</td>
 
@@ -1742,7 +2239,11 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
 <td class="status-Y">4.2</td>
+
+<td class="status-NA">N/A</td>
 
 <td class="status-NA">N/A</td>
 
@@ -1784,6 +2285,8 @@
 
 <td class="status-Y">5.14</td>
 
+<td class="status-N">N</td>
+
 <td class="status-NA">N/A</td>
 
 <td class="status-NA">N/A</td>
@@ -1795,6 +2298,8 @@
 <td class="status-N">N</td>
 
 <td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
 
 <td class="status-NA">N/A</td>
 
@@ -1830,17 +2335,21 @@
 
 <td class="status-Y">5.16</td>
 
-<td class="status-NA">N/A</td>
-
-<td class="status-N">N</td>
+<td class="status-Y">6.5</td>
 
 <td class="status-NA">N/A</td>
 
 <td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
 
 <td class="status-N">N</td>
 
 <td class="status-Y">5.9</td>
+
+<td class="status-NA">N/A</td>
 
 <td class="status-NA">N/A</td>
 
@@ -1892,6 +2401,10 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
 
 <td><a href="/msm/pmic/pmk8350">PMK8350</a></td>
 </tr>
@@ -1938,6 +2451,10 @@
 
 <td class="status-NA">N/A</td>
 
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
 
 <td><a href="/msm/pmic/pmk8550">PMK8550</a></td>
 </tr>
@@ -1957,6 +2474,10 @@
 <td class="status-NA">N/A</td>
 
 <td class="status-Y">5.13</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
 
 <td class="status-NA">N/A</td>
 
@@ -2003,6 +2524,10 @@
 <td class="status-NA">N/A</td>
 
 <td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
 
 <td class="status-NA">N/A</td>
 
@@ -2049,6 +2574,10 @@
 <td class="status-NA">N/A</td>
 
 <td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
 
 <td class="status-NA">N/A</td>
 
@@ -2101,7 +2630,7 @@
           <li class="p-name">Qualcomm mainline status</li><li><a class="u-email" href="mailto:linux-arm-msm@vger.kernel.org">linux-arm-msm@vger.kernel.org</a></li></ul>
       </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/Linaro"><svg class="svg-icon"><use xlink:href="/msm/assets/minima-social-icons.svg#github"></use></svg> <span class="username">Linaro</span></a></li></ul>
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/Linaro"><svg class="svg-icon"><use xlink:href="/msm/assets/minima-social-icons.svg#github"></use></svg> <span class="username">Linaro</span></a></li><li><a href="https://www.twitter.com/LinaroOrg"><svg class="svg-icon"><use xlink:href="/msm/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">LinaroOrg</span></a></li></ul>
 </div>
 
       <div class="footer-col footer-col-3">
