@@ -1,5 +1,5 @@
 ---
-name: PMR735A
+name: PMM8654AU
 layout: pmic
 pmic-adc-gpadc: N/A
 pmic-adc-iadc: N/A
@@ -14,21 +14,20 @@ pmic-coincell: N/A
 pmic-eusb2repeat: N/A
 pmic-flash: N/A
 pmic-fuelgauge: N/A
-pmic-gpio: 5.13
+pmic-gpio: 6.4
 pmic-haptics: N/A
 pmic-keypad: N/A
 pmic-labib: N/A
 pmic-lpg: N/A
 pmic-mpp: N/A
-pmic-pon: N/A
+pmic-pon: 6.4
 pmic-qnovo: N/A
-pmic-regulators: 5.16
-pmic-resin: N/A
-pmic-rtc: N/A
-pmic-tempalarm: 5.13
+pmic-regulators: 6.4
+pmic-resin: 6.4
+pmic-rtc: 6.3
+pmic-tempalarm: 6.4
 pmic-usb-extcon: N/A
 pmic-usb-typecpd: N/A
 pmic-watchdog: N/A
 pmic-wled: N/A
 ---
-This PMIC is usually used with the [SM8450](../soc/sm8450), [SM8350](../soc/sm8350), sc7280 & sm6375 platforms.

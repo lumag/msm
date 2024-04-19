@@ -90,7 +90,7 @@ status-video-venus: N/A
 status-watchdog: 6.0
 pmic: pmk8350, pm8150b, pmx65
 ---
-SDX65 (Olympic)
+SDX65 
 
 Tested Boards:
 - SDX65-MTP

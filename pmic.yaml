@@ -63,8 +63,8 @@ usb:
 coincell:
   name: Coincell
   intop: True
-fuelgague:
-  name: Fuelgague/Charging
+fuelgauge:
+  name: Fuelgauge/Charging
   intop: True
 haptics:
   name: Haptics
